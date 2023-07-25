@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signals</title>
+</head>
+<body>
+    <h1 style="font-family: cursive; font-weight: 800; text-align: center; background-color: beige; color: red; border: 1px solid black; padding: 10px;">Signal Controlling</h1>
+    <div style="text-align: center;">
+        <button  style="width: 3cm; height: 1cm;" onclick="changetored()">RED</button>
+        <button style="width: 3cm; height: 1cm;" onclick="changetoyellow()">YELLOW</button>
+        <button style="width: 3cm; height: 1cm;" onclick="changetogreen()">GREEN</button>
+    </div>
+    
+    <div>
+        <img id="image" src="" alt="" srcset=""  style="margin-left: auto; margin-right: auto; display: block; width: 4%;">
+    </div>
+    <br>
+   
+    
+
+
+    <script>
+        function changetored()
+        {
+            document.getElementById("image").setAttribute("src","lights.png")
+
+        }
+
+        function changetoyellow()
+        {
+
+            document.getElementById("image").setAttribute("src","light3.jpg")
+
+        }
+        changetogreen=()=>
+        {
+            document.getElementById("image").setAttribute("src","light2.jpg")
+        }
+
+    </script>
+</body>
+</html>
